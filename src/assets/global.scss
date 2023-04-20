@@ -1,0 +1,129 @@
+@import "./reset";
+@import "./vars";
+@import "./fonts";
+
+html {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 4rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $secondary-color;
+}
+
+//TEXT STYLES
+
+.renlincode {
+  &-big-title {
+    font-family: "Russo One", sans-serif;
+    font-size: 96rem;
+    line-height: 120rem;
+    font-weight: 600;
+    @media only screen and (max-width: 650px) {
+      font-size: 60rem;
+      line-height: 62rem;
+    }
+  }
+  &-title {
+    font-family: "Russo One", sans-serif;
+    font-size: 40rem;
+    line-height: 41.5rem;
+    font-weight: 600;
+    @media only screen and (max-width: 650px) {
+      font-size: 30rem;
+    }
+  }
+  &-subtitle {
+    font-family: "Russo One", sans-serif;
+    font-size: 20rem;
+    line-height: 26rem;
+    font-weight: 600;
+    @media only screen and (max-width: 650px) {
+      font-size: 16rem;
+      line-height: 22rem;
+    }
+  }
+  &-text {
+    font-size: 14rem;
+    line-height: 20rem;
+  }
+  &--link {
+    color: $main-color;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14rem;
+  line-height: 20rem;
+}
+
+.section {
+  padding-top: 80rem;
+}
+
+.section-title {
+  &::before {
+      content: "---";
+      letter-spacing: -3rem;
+      padding-right: 10rem;
+      border-radius: 2rem;
+  }
+}
+
+//VISIBILITY
+.desktop-hidden {
+  @media only screen and (min-width: 650px) {
+    display: none !important;
+  }
+}
+.mobile-hidden {
+  @media only screen and (max-width: 650px) {
+    display: none !important;
+  }
+}
+
+//LAYOUT
+.main-content-wrapper {
+  width: 1100rem;
+  margin: 0 auto;
+  @media only screen and (max-width: 650px) {
+    width: 100%;
+    padding: 0 15rem;
+  }
+}
+.header-spaceholder {
+  width: 100%;
+  height: 70rem;
+}
+
+//LINKS HOVER
+.underline {
+  text-decoration: none;
+  background-image: linear-gradient($main-color, $main-color);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2rem;
+  transition: background-size 300ms ease-in-out !important;
+  &:hover {
+      background-size: 100% 2rem;
+      background-position: 0% 100%;
+      @media only screen and (max-width: 650px) {
+          background-size: 100% 1rem;
+      }
+  }
+}
+.opacity {
+  transition: opacity 300ms ease-in-out !important;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+//GLOBAL
+body {
+  background: $black-color;
+}
