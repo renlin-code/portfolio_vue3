@@ -17,8 +17,6 @@
 
 <script setup>
 import AnimatedArrows from '../Icons/animatedArrows.vue';
-
-
 </script>
 <style scoped lang="scss">
 .hero {

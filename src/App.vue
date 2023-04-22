@@ -5,6 +5,7 @@
       <div class="header-spaceholder"></div>
       <Hero />
       <AboutMe />
+      <Certificates />
     </main>
   </div>
 </template>
@@ -13,6 +14,7 @@
 import Header from "@/components/Layout/Header.vue";
 import Hero from "@/components/Sections/Hero.vue";
 import AboutMe from "./components/Sections/AboutMe.vue";
+import Certificates from "./components/Sections/Certificates.vue";
 </script>
 
 <style scoped lang="scss">
