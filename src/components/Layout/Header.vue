@@ -20,7 +20,7 @@
       />
 
       <a target="_blank" class="header__phone opacity" href="tel:+79373217299">
-        <PhoneIcon class="header__phone-icon" />
+        <contactIcon type="phone" class="header__phone-icon" />
         <span class="mobile-hidden">+7 (937) 321 72 99</span>
       </a>
     </div>
@@ -32,7 +32,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import BurgerButton from "../Buttons/BurgerButton.vue";
 import NavMenu from "../Navigation/NavMenu.vue";
-import PhoneIcon from "../Icons/phoneIcon.vue";
+import contactIcon from "../Icons/contactIcon.vue";
 import RenlinCodeLogo from "../Logos/renlinCodeLogo.vue";
 
 import { ref, watch, onMounted } from "vue";

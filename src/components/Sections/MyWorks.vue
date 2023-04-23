@@ -1,58 +1,46 @@
 <template>
   <section id="works" class="works renlincode-section">
-    <div class="main-content-wrapper">
-      <div class="works__content">
-        <h2 class="works__title renlincode-title section-title">Мои проекты</h2>
-        <div class="works__wrapper">
-          <div
-            class="works__work"
-            :class="{ reverse: works.indexOf(work) % 2 !== 0 }"
-            v-for="work in works"
-          >
-            <h6
-              class="works__work-info-title renlincode-subtitle desktop-hidden"
-            >
+    <div class="works__content main-content-wrapper">
+      <h2 class="works__title renlincode-title section-title">Мои проекты</h2>
+      <div class="works__wrapper">
+        <div
+          class="works__work"
+          :class="{ reverse: works.indexOf(work) % 2 !== 0 }"
+          v-for="work in works"
+        >
+          <h6 class="works__work-info-title renlincode-subtitle desktop-hidden">
+            {{ work.title }}
+          </h6>
+
+          <div class="works__work-left">
+            <a target="_blank" :href="work.deploy_address" class="works__work-img-link">
+              <figure class="onhover-light">
+                <img :src="work.img_url" alt="" />
+                <div class="front-layer"></div>
+              </figure>
+            </a>
+          </div>
+          <div class="works__work-info">
+            <h6 class="works__work-info-title renlincode-subtitle mobile-hidden">
               {{ work.title }}
             </h6>
-
-            <div class="works__work-left">
-              <a
-                target="_blank"
-                :href="work.deploy_address"
-                class="works__work-img-link"
-              >
-                <figure class="onhover-light">
-                  <img :src="work.img_url" alt="" />
-                  <div class="front-layer"></div>
-                </figure>
-              </a>
-            </div>
-            <div class="works__work-info">
-              <h6
-                class="works__work-info-title renlincode-subtitle mobile-hidden"
-              >
-                {{ work.title }}
-              </h6>
-              <ul class="works__work-info-list">
-                <li v-for="detail in work.details">
-                  {{ detail }}
-                </li>
+            <ul class="works__work-info-list">
+              <li v-for="detail in work.details">
+                {{ detail }}
+              </li>
+            </ul>
+            <div class="works__work-info-tech">
+              <p class="works__work-info-tech-text">В этом проекте я использовал:</p>
+              <ul>
+                <li v-for="tech in work.stack"><skillIcon :type="tech" /></li>
               </ul>
-              <div class="works__work-info-tech">
-                <p class="works__work-info-tech-text">
-                  В этом проекте я использовал:
-                </p>
-                <ul>
-                  <li v-for="tech in work.stack"><skillIcon :type="tech" /></li>
-                </ul>
-              </div>
-              <a
-                target="_blank"
-                :href="work.repo_address"
-                class="works__work-info-link renlincode-link opacity"
-                >Посмотреть репозиторий</a
-              >
             </div>
+            <a
+              target="_blank"
+              :href="work.repo_address"
+              class="works__work-info-link renlincode-link opacity"
+              >Посмотреть репозиторий</a
+            >
           </div>
         </div>
       </div>

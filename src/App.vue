@@ -7,7 +7,9 @@
       <AboutMe />
       <Certificates />
       <MyWorks />
+      <Contacts />
     </main>
+    <Footer />
   </div>
 </template>
 
@@ -17,6 +19,8 @@ import Hero from "@/components/Sections/Hero.vue";
 import AboutMe from "./components/Sections/AboutMe.vue";
 import Certificates from "./components/Sections/Certificates.vue";
 import MyWorks from "./components/Sections/MyWorks.vue";
+import Contacts from "./components/Sections/Contacts.vue";
+import Footer from "@/components/Layout/Footer.vue";
 </script>
 
 <style scoped lang="scss">
