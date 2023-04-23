@@ -27,7 +27,7 @@ const links = reactive([
     href: "#works",
   },
   {
-    name: "Проекты",
+    name: "Мое участвие",
     href: "#proyects",
   },
   {

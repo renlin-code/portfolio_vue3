@@ -1,15 +1,12 @@
 <template>
-  <header :style="`background: ${color}`" class="header">
-    <div
-      :style="`background: ${color}`"
-      class="header__content main-content-wrapper"
-    >
+  <header :style="`background: ${color}; box-shadow: ${shadow}`" class="header">
+    <div :style="`background: ${color}`" class="header__content main-content-wrapper">
       <BurgerButton
         class="desktop-hidden"
         :open="menuOpen"
         @click.native="menuOpen = !menuOpen"
       />
-      <a target="_blank" href="#" class="header__logo">
+      <a href="#home" @click="menuOpen = false" class="header__logo">
         <RenlinCodeLogo />
       </a>
 
@@ -44,7 +41,7 @@ watch(menuOpen, (value) => {
 
 const clientWidth = ref(null);
 const color = ref("#151F28");
-
+const shadow = ref("none");
 
 const gsapStartHandler = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -57,9 +54,11 @@ const gsapStartHandler = () => {
       toggleActions: "restart none reverse none",
       onLeave: () => {
         color.value = "#0f1b1f";
+        shadow.value = "4rem 0rem 20rem rgba(0, 0, 0, 0.81)";
       },
       onEnterBack: () => {
         color.value = "#151F28";
+        shadow.value = "none";
       },
     },
   });

@@ -7,6 +7,7 @@
       <AboutMe />
       <Certificates />
       <MyWorks />
+      <ProyectsWithMe />
       <Contacts />
     </main>
     <Footer />
@@ -21,6 +22,7 @@ import Certificates from "./components/Sections/Certificates.vue";
 import MyWorks from "./components/Sections/MyWorks.vue";
 import Contacts from "./components/Sections/Contacts.vue";
 import Footer from "@/components/Layout/Footer.vue";
+import ProyectsWithMe from "./components/Sections/ProyectsWithMe.vue";
 </script>
 
 <style scoped lang="scss">

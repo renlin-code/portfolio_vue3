@@ -187,6 +187,7 @@ const works = reactive([
         }
         ul {
           display: flex;
+          flex-wrap: wrap;
           gap: 10rem;
           list-style: none;
         }
