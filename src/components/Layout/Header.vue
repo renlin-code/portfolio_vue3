@@ -9,7 +9,7 @@
         :open="menuOpen"
         @click.native="menuOpen = !menuOpen"
       />
-      <a href="#" class="header__logo">
+      <a target="_blank" href="#" class="header__logo">
         <RenlinCodeLogo />
       </a>
 
@@ -19,7 +19,7 @@
         @selectedNavItem="menuOpen = false"
       />
 
-      <a class="header__phone opacity" href="tel:+79373217299">
+      <a target="_blank" class="header__phone opacity" href="tel:+79373217299">
         <PhoneIcon class="header__phone-icon" />
         <span class="mobile-hidden">+7 (937) 321 72 99</span>
       </a>

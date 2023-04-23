@@ -47,6 +47,7 @@
 .about-me {
   width: 100%;
   background: $white-color;
+  padding-bottom: 0;
   &__title {
     color: $black-color;
   }

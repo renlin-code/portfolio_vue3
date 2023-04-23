@@ -206,7 +206,6 @@ const startFlickity = (initialIndex) => {
   flkty.value = new Flickity(".modal-certificates__slider", options);
 };
 
-console.log(props.selected);
 onMounted(() => {
   clientWidth.value = document.documentElement.clientWidth;
   startFlickity(selected.value);
@@ -287,13 +286,13 @@ onMounted(() => {
       z-index: 1;
       width: 26rem;
       height: 26rem;
-      background: #3e3e3e;
-      color: $white-color;
+      background: transparent;
+      color: $main-color;
       transform: none;
       transition: all 300ms ease-in-out;
       &:hover {
         background: $white-color;
-        color: #3e3e3e;
+        color: $very-black-color;
       }
       @media only screen and (max-width: 650px) {
         bottom: -190rem;

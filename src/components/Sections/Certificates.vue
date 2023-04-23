@@ -15,10 +15,9 @@
           Я стараюсь постоянно совершенствоваться, в чем вы можете убедиться,
           посмотрев на мои сертификаты. Большинство курсов и сертификатов я
           получил на популярной латиноамериканской платформе
-          <a
+          <a target="_blank"
             class="renlincode-link opacity"
             href="https://platzi.com"
-            target="_blank"
             rel="noopener noreferrer"
             >Platzi</a
           >.
@@ -362,16 +361,16 @@ onMounted(() => {
         z-index: 1;
         width: 26rem;
         height: 26rem;
-        background: #3e3e3e;
-        color: $white-color;
+        background: transparent;
+        color: $main-color;
         transform: none;
         transition: all 300ms ease-in-out;
         &:hover {
           background: $white-color;
-          color: #3e3e3e;
+          color: $very-black-color;
         }
         @media only screen and (max-width: 650px) {
-          bottom: -38rem;
+          bottom: -50rem;
           top: unset;
         }
         &.previous {

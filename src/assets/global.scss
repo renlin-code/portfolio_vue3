@@ -63,18 +63,23 @@ body {
 
 .renlincode-section {
   padding-top: 80rem;
+  padding-bottom: 80rem;
   @media only screen and (max-width: 650px) {
     padding-top: 50rem;
+    padding-bottom: 50rem;
   }
 }
 
 .section-title {
-  margin-bottom: 30rem;
+  margin-bottom: 80rem;
   &::before {
     content: "---";
     letter-spacing: -3rem;
     padding-right: 10rem;
     border-radius: 2rem;
+  }
+  @media only screen and (max-width: 650px) {
+    margin-bottom: 34rem;
   }
 }
 
@@ -142,7 +147,7 @@ body {
     transition: opacity 300ms ease-in-out;
   }
   &:hover {
-    box-shadow: 0 0rem 50rem $main-color;
+    box-shadow: 0 0rem 50rem $main-color !important;
     .front-layer {
       opacity: 1;
     }

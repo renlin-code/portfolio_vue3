@@ -8,7 +8,7 @@
         src="@/assets/images/banner-picture.png"
         alt="Рене Линарес"
       />
-      <a href="#about" class="hero__arrows">
+      <a target="_blank" href="#about" class="hero__arrows">
         <AnimatedArrows />
       </a>
     </div>
