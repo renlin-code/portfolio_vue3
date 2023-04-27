@@ -44,20 +44,20 @@ const gsapAnimateEl = (selector, scrub, translateY) => {
 
 onMounted(() => {
   gsapAnimateEl(".word1", 2, 70);
-  gsapAnimateEl(".word2", 3, 82);
+  gsapAnimateEl(".word2", 3, 88);
   gsapAnimateEl(".word3", 5, 73);
-  gsapAnimateEl(".word4", 3, 65);
+  gsapAnimateEl(".word4", 3, 62);
   gsapAnimateEl(".word5", 6, 71);
-  gsapAnimateEl(".word6", 4, 68);
+  gsapAnimateEl(".word6", 4, 63);
   gsapAnimateEl(".word7", 3, 73);
   gsapAnimateEl(".word8", 5, 69);
-  gsapAnimateEl(".word9", 2, 75);
+  gsapAnimateEl(".word9", 2, 79);
   gsapAnimateEl(".word10", 6, 68);
   gsapAnimateEl(".word11", 3, 76);
   gsapAnimateEl(".word12", 4, 78);
   gsapAnimateEl(".word13", 2, 60);
   gsapAnimateEl(".word14", 5, 78);
-  gsapAnimateEl(".word15", 6, 79);
+  gsapAnimateEl(".word15", 6, 89);
 });
 </script>
 

@@ -27,7 +27,14 @@
             </h6>
             <p class="proyects__proyect-info-list-title">Что делал я по проекту:</p>
             <ul class="proyects__proyect-info-list">
-              <li v-for="detail in proyect.details">{{ detail }}</li>
+              <li v-for="detail in proyect.details">
+                {{ detail
+                }}{{
+                  proyect.details.indexOf(detail) !== proyect.details.length - 1
+                    ? ";"
+                    : "."
+                }}
+              </li>
             </ul>
             <div class="proyects__proyect-info-tech">
               <p class="proyects__proyect-info-tech-text">Стек проекта:</p>
@@ -51,13 +58,14 @@ const proyects = reactive([
     id: "0",
     title: "Сайт интернет-провайдера с личным кабинетом",
     details: [
-      "Резиновая верстка макетов;",
-      "Создание и написание Nuxt компонентов и программирование их функционнальности и анимаций;",
-      "Взаимодействие с Backend через API;",
-      "Создание прелоудера и его анимаций;",
+      "Резиновая верстка всех страниц по макету",
+      "Создание переключателя между темной и светлой темами",
+      "Написание и программирование всего Frontend на Nuxt2 (Options API)",
+      "Взаимодействие с Backend через REST API",
+      "Управление учетной записью c помощью JWT и localStorage",
       "(Еще в разработке)",
     ],
-    deploy_address: "",
+    deploy_address: "https://m2.choosedesign.ru",
     img_url: "/src/assets/images/proyects/m2.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
@@ -65,13 +73,13 @@ const proyects = reactive([
     id: "1",
     title: "Сайт логистической компании с личным кабинетом",
     details: [
-      "Резиновая верстка макетов;",
-      "Создание и написание Nuxt компонентов и программирование их функционнальности и анимаций;",
-      "Взаимодействие с Backend через API;",
-      "Создание прелоудера и его анимаций;",
+      "Резиновая верстка всех страниц по макету",
+      "Написание и программирование Frontend на Nuxt2 (Options API)",
+      "Взаимодействие с Backend через API",
+      "Создание прелоудера и его анимаций",
       "(Еще в разработке)",
     ],
-    deploy_address: "https://logist.llc.ru/",
+    deploy_address: "https://logist.llc.ru",
     img_url: "/src/assets/images/proyects/logist.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
@@ -79,25 +87,33 @@ const proyects = reactive([
     id: "2",
     title: "Сайт агентства недвижимости с каталогом объектов",
     details: [
-      "Резиновая верстка макетов новых страниц;",
-      "Создание и написание Nuxt компонентов и программирование их функционнальности и анимаций для новых страниц;",
-      "Взаимодействие с Backend через API;",
-      "Правки по сайту.",
+      "Поддержка Frontend проекта и написание новых компонентов на Nuxt2 (Options API)",
+      "Взаимодействие с Backend через REST API",
+      "Правки по сайту",
     ],
-    deploy_address: "https://akit.ru/",
+    deploy_address: "https://mirkv.ru",
     img_url: "/src/assets/images/proyects/mir-kv.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress", "Prisma ORM"],
+    stack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SASS",
+      "Vue",
+      "Nuxt",
+      "PHP",
+      "Wordpress",
+      "Prisma ORM",
+    ],
   },
   {
     id: "3",
     title: "Корпоративный сайт компании SKYTECHNIC",
     details: [
-      "Резиновая верстка макетов;",
-      "Создание и написание Nuxt компонентов и программирование их функционнальности и анимаций;",
-      "Взаимодействие с Backend через API;",
+      "Написание и программирование всего Frontend на Nuxt2 (Options API)",
+      "Взаимодействие с Backend через REST API",
       "Создание прелоудера и его анимаций.",
     ],
-    deploy_address: "https://skytechnic.aero/",
+    deploy_address: "https://skytechnic.aero",
     img_url: "/src/assets/images/proyects/skytechnic.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
@@ -105,28 +121,35 @@ const proyects = reactive([
     id: "4",
     title: "Корпоративный сайт с аналитикой рынка E-commerce России",
     details: [
-      "Резиновая верстка макетов новых страниц;",
-      "Создание и написание Nuxt компонентов и программирование их функционнальности и анимаций для новых страниц;",
-      "Взаимодействие с Backend через API;",
-      "Правки по сайту.",
+      "Поддержка Frontend проекта и написание новых компонентов на Nuxt2 (Options API)",
+      "Взаимодействие с Backend через REST API",
+      "Правки по сайту",
     ],
-    deploy_address: "https://akit.ru/",
+    deploy_address: "https://akit.ru",
     img_url: "/src/assets/images/proyects/akit.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
     id: "5",
     title: "Интернет-магазин светильников и люстр оптом",
-    details: ["Резиновая верстка макетов новых страниц;", "(Еще в разработке)"],
-    deploy_address: "https://test.choosedesign.ru/nasledie/index.html",
+    details: [
+      "Резиновая верстка всех страниц по макету",
+      "Написание некоторых функционалов на нативном JS",
+      "(Еще в разработке)"
+    ],
+    deploy_address: "https://nelprow3.fvds.ru",
     img_url: "/src/assets/images/proyects/sonex.jpg",
     stack: ["HTML", "CSS", "JavaScript", "PHP", "1C Bitrix"],
   },
   {
     id: "6",
     title: "Nasledie – портал для создания “Капсулы жизни”",
-    details: ["Резиновая верстка макетов новых страниц;", "(Еще в разработке)"],
-    deploy_address: "https://isonex.ru/",
+    details: [
+      "Резиновая верстка некоторых страниц по макету",
+      "Написание некоторых функционалов на нативном JS",
+      "(Еще в разработке)"
+    ],
+    deploy_address: "https://nasledie.digital",
     img_url: "/src/assets/images/proyects/nasledie.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
@@ -134,9 +157,9 @@ const proyects = reactive([
     id: "7",
     title: "Cайт на Тильде с интеграцией с другими сервисами",
     details: [
-      "Кастомизация некоторых блоков с помощью CSS;",
-      "Интеграция с Unisender и Bitrix24;",
-      "Написание дополнительного Javascript кода.",
+      "Кастомизация некоторых блоков с помощью CSS",
+      "Интеграция с Unisender и Bitrix24",
+      "Написание дополнительного кода на нативном JS для кастомных функционалов",
     ],
     deploy_address: "https://omnicdek.ru/",
     img_url: "/src/assets/images/proyects/omnicdek.jpg",
@@ -155,6 +178,7 @@ const startFlickity = () => {
     prevNextButtons: false,
     selectedAttraction: 0.05,
     friction: 1,
+    adaptiveHeight: true,
   };
   if (clientWidth.value > 650) {
     flkty.value = new Flickity(".proyects__wrapper", options);
@@ -269,7 +293,7 @@ onMounted(() => {
       cursor: default !important;
     }
     &-page-dots {
-      bottom: -50rem;
+      bottom: -76rem;
       .dot {
         width: 8rem;
         height: 8rem;
