@@ -46,6 +46,7 @@ import AnimatedImg from '../Other/AnimatedImg.vue';
   width: 100%;
   background: $white-color;
   padding-bottom: 0;
+  overflow: hidden;
   &__title {
     color: $black-color;
   }

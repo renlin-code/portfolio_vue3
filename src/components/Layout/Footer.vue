@@ -99,7 +99,7 @@ const links = reactive([
       gap: 30rem;
       @media only screen and (max-width: 650px) {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         column-gap: 10rem;
         row-gap: 16rem;
         margin-bottom: 30rem;
