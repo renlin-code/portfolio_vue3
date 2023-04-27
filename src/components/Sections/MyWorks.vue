@@ -59,9 +59,9 @@ const works = reactive([
     details: [
       "Резиновая верстка макетов орентированная под мобильными устройствами;",
       "Создание и написание компонентов и программирование их функционнальности;",
-      "Использование sessionStorage и localStorage для имитации Backend;",
-      "Билдинг как PWA;",
-      "(Приложение еще в разработке)",
+      "Самодействие с Backend через REST API;",
+      "Управление учетной записью c помощью JWT и localStorage",
+      "Запуск приложения в режиме SPA (Single Page App) и PWA (Progressive Web App)",
     ],
     deploy_address: "https://time-master.netlify.app/",
     repo_address: "https://github.com/renlin-code/time-master_frontend",

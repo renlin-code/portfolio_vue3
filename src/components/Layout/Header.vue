@@ -48,7 +48,7 @@ const gsapStartHandler = () => {
 
   gsap.to(".header", {
     scrollTrigger: {
-      trigger: "header",
+      trigger: ".header",
       start: "top top",
       end: "+=30rem",
       toggleActions: "restart none reverse none",

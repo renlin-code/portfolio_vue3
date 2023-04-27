@@ -147,7 +147,7 @@ body {
     transition: opacity 300ms ease-in-out;
   }
   &:hover {
-    box-shadow: 0 0rem 50rem $main-color !important;
+    box-shadow: 0 0 5rem 3rem $main-color !important;
     .front-layer {
       opacity: 1;
     }

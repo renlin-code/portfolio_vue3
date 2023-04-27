@@ -71,7 +71,7 @@ const proyects = reactive([
       "Создание прелоудера и его анимаций;",
       "(Еще в разработке)",
     ],
-    deploy_address: "https://logist.choosedesign.ru/",
+    deploy_address: "https://logist.llc.ru/",
     img_url: "/src/assets/images/proyects/logist.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
@@ -126,7 +126,7 @@ const proyects = reactive([
     id: "6",
     title: "Nasledie – портал для создания “Капсулы жизни”",
     details: ["Резиновая верстка макетов новых страниц;", "(Еще в разработке)"],
-    deploy_address: "https://test.choosedesign.ru/nasledie/index.html",
+    deploy_address: "https://isonex.ru/",
     img_url: "/src/assets/images/proyects/nasledie.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
@@ -139,7 +139,7 @@ const proyects = reactive([
       "Написание дополнительного Javascript кода.",
     ],
     deploy_address: "https://omnicdek.ru/",
-    img_url: "/src/assets/images/proyects/omnicdek.png",
+    img_url: "/src/assets/images/proyects/omnicdek.jpg",
     stack: ["HTML", "CSS", "JavaScript", "Tilda"],
   },
 ]);
@@ -269,11 +269,12 @@ onMounted(() => {
       cursor: default !important;
     }
     &-page-dots {
-      bottom: -46rem;
+      bottom: -50rem;
       .dot {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 10rem;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 8rem;
+        margin: 0 8rem;
         background: $white-color;
         transition: all 300ms ease-in-out;
         &.is-selected {
