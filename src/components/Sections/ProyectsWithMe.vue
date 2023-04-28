@@ -16,7 +16,7 @@
               class="proyects__proyect-img-link"
             >
               <figure class="onhover-light">
-                <img :src="`src${proyect.img_url}`" alt="" />
+                <img :src="proyect.img_url" alt="" />
                 <div class="front-layer"></div>
               </figure>
             </a>
@@ -66,7 +66,7 @@ const proyects = reactive([
       "(Еще в разработке)",
     ],
     deploy_address: "https://m2.choosedesign.ru",
-    img_url: "/assets/images/m2.jpg",
+    img_url: "https://imgur.com/CHVLTpL.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
@@ -80,7 +80,7 @@ const proyects = reactive([
       "(Еще в разработке)",
     ],
     deploy_address: "https://logist.llc.ru",
-    img_url: "/assets/images/logist.jpg",
+    img_url: "https://imgur.com/3njrv8c.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
@@ -92,7 +92,7 @@ const proyects = reactive([
       "Правки по сайту",
     ],
     deploy_address: "https://mirkv.ru",
-    img_url: "/assets/images/mir-kv.jpg",
+    img_url: "https://imgur.com/pAAN7d0.jpg",
     stack: [
       "HTML",
       "CSS",
@@ -114,7 +114,7 @@ const proyects = reactive([
       "Создание прелоудера и его анимаций.",
     ],
     deploy_address: "https://skytechnic.aero",
-    img_url: "/assets/images/skytechnic.jpg",
+    img_url: "https://imgur.com/fw0e2iI.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
@@ -126,7 +126,7 @@ const proyects = reactive([
       "Правки по сайту",
     ],
     deploy_address: "https://akit.ru",
-    img_url: "/assets/images/akit.jpg",
+    img_url: "https://imgur.com/k31WsWo.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
@@ -138,7 +138,7 @@ const proyects = reactive([
       "(Еще в разработке)"
     ],
     deploy_address: "https://nelprow3.fvds.ru",
-    img_url: "/assets/images/sonex.jpg",
+    img_url: "https://imgur.com/undefined.jpg",
     stack: ["HTML", "CSS", "JavaScript", "PHP", "1C Bitrix"],
   },
   {
@@ -150,7 +150,7 @@ const proyects = reactive([
       "(Еще в разработке)"
     ],
     deploy_address: "https://nasledie.digital",
-    img_url: "/assets/images/nasledie.jpg",
+    img_url: "https://imgur.com/rd0fszb.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
@@ -162,7 +162,7 @@ const proyects = reactive([
       "Написание дополнительного кода на нативном JS для кастомных функционалов",
     ],
     deploy_address: "https://omnicdek.ru/",
-    img_url: "/assets/images/omnicdek.jpg",
+    img_url: "https://imgur.com/dbUnquQ.jpg",
     stack: ["HTML", "CSS", "JavaScript", "Tilda"],
   },
 ]);
