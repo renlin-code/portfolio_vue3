@@ -256,7 +256,7 @@ onMounted(() => {
   }
   &__text {
     color: $white-color;
-    padding-top: 60rem;
+    padding-top: 40rem;
     @media only screen and (max-width: 650px) {
       padding: 0 15rem;
     }
@@ -264,9 +264,9 @@ onMounted(() => {
   &__slider {
     position: relative;
     width: 100%;
-    height: 352rem;
+    height: 313rem;
     overflow: hidden;
-    padding: 60rem 0;
+    padding: 40rem 0;
     @media only screen and (max-width: 650px) {
       height: 327rem;
     }

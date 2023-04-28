@@ -32,7 +32,7 @@ import AnimatedArrows from '../Icons/animatedArrows.vue';
     color: $white-color;
     padding: 80rem 0 18rem;
     font-size: 30rem;
-    letter-spacing: 2rem;
+    letter-spacing: 1rem;
     @media only screen and (max-width: 650px) {
       padding-top: 20rem;
       font-size: 16rem;

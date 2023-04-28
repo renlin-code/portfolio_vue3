@@ -76,7 +76,7 @@ const proyects = reactive([
       "Резиновая верстка всех страниц по макету",
       "Написание и программирование Frontend на Nuxt2 (Options API)",
       "Взаимодействие с Backend через API",
-      "Создание прелоудера и его анимаций",
+      "Создание анимации для всего сайта и сложного прелоудера",
       "(Еще в разработке)",
     ],
     deploy_address: "https://logist.llc.ru",
@@ -111,7 +111,7 @@ const proyects = reactive([
     details: [
       "Написание и программирование всего Frontend на Nuxt2 (Options API)",
       "Взаимодействие с Backend через REST API",
-      "Создание прелоудера и его анимаций.",
+      "Создание анимации для всего сайта и сложного прелоудера",
     ],
     deploy_address: "https://skytechnic.aero",
     img_url: "https://imgur.com/fw0e2iI.jpg",
