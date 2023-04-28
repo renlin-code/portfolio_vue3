@@ -15,7 +15,7 @@
           <div class="works__work-left">
             <a target="_blank" :href="work.deploy_address" class="works__work-img-link">
               <figure class="onhover-light">
-                <img :src="work.img_url" alt="" />
+                <img :src="`src${work.img_url}`" alt="" />
                 <div class="front-layer"></div>
               </figure>
             </a>
@@ -68,7 +68,7 @@ const works = reactive([
     ],
     deploy_address: "https://time-master.netlify.app/",
     repo_address: "https://github.com/renlin-code/time-master_frontend",
-    img_url: "/src/assets/images/works/timemaster.png",
+    img_url: "/assets/images/timemaster.png",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt"],
   },
   {
@@ -83,7 +83,7 @@ const works = reactive([
     ],
     deploy_address: "https://time-master.netlify.app/",
     repo_address: "https://github.com/renlin-code/time-master_backend",
-    img_url: "/src/assets/images/works/timemaster.png",
+    img_url: "/assets/images/timemaster.png",
     stack: ["JavaScript", "Node JS", "Express", "Sequelize ORM", "Postgres SQL"],
   },
   {
@@ -97,7 +97,7 @@ const works = reactive([
     ],
     deploy_address: "https://spyfall-game.netlify.app/#",
     repo_address: "https://github.com/renlin-code/spyfall_2.0",
-    img_url: "/src/assets/images/works/spyfall.png",
+    img_url: "/assets/images/spyfall.png",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue"],
   },
   {
@@ -110,7 +110,7 @@ const works = reactive([
     ],
     deploy_address: "https://renlin-code.online/",
     repo_address: "https://github.com/renlin-code/portfolio",
-    img_url: "/src/assets/images/works/renlin-code.png",
+    img_url: "/assets/images/renlin-code.png",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue"],
   },
 ]);
