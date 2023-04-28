@@ -21,6 +21,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "Russo One", sans-serif;
     font-size: 96rem;
     line-height: 120rem;
+    letter-spacing: 2rem;
     font-weight: 600;
     @media only screen and (max-width: 650px) {
       font-size: 60rem;
@@ -72,6 +73,7 @@ body {
 
 .section-title {
   margin-bottom: 80rem;
+  letter-spacing: 2rem;
   &::before {
     content: "---";
     letter-spacing: -3rem;

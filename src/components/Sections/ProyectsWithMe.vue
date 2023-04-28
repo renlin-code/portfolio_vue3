@@ -246,7 +246,7 @@ onMounted(() => {
       }
       &-title {
         color: $white-color;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", sans-serif !important;
         margin-bottom: 30rem;
         @media only screen and (max-width: 650px) {
           margin-bottom: 20rem;

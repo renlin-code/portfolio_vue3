@@ -247,7 +247,7 @@ onMounted(() => {
     grid-template-columns: 450rem 1fr;
     gap: 100rem;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     @media only screen and (max-width: 650px) {
       display: flex;
       flex-direction: column;
@@ -256,6 +256,7 @@ onMounted(() => {
   }
   &__text {
     color: $white-color;
+    padding-top: 60rem;
     @media only screen and (max-width: 650px) {
       padding: 0 15rem;
     }
