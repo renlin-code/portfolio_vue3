@@ -1,6 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import './assets/global.scss'
+import './assets/global.scss';
+import rem from './plugins/rem';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(rem);
+app.mount('#app')
