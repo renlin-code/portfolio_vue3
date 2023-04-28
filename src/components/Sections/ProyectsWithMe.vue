@@ -138,7 +138,7 @@ const proyects = reactive([
       "(Еще в разработке)"
     ],
     deploy_address: "https://nelprow3.fvds.ru",
-    img_url: "https://imgur.com/undefined.jpg",
+    img_url: "https://imgur.com/UzVumoZ.jpg",
     stack: ["HTML", "CSS", "JavaScript", "PHP", "1C Bitrix"],
   },
   {
