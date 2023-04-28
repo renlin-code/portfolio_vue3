@@ -356,7 +356,7 @@ onMounted(() => {
           color: $very-black-color;
         }
         @media only screen and (max-width: 650px) {
-          bottom: -50rem;
+          bottom: -20rem;
           top: unset;
         }
         &.previous {
