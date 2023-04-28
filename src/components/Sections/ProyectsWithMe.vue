@@ -93,7 +93,7 @@ const proyects = reactive([
     ],
     deploy_address: "https://mirkv.ru",
     img_url: "https://imgur.com/pAAN7d0.jpg",
-    stack: ["HTML", "CSS", "JavaScript","SASS","Vue","Nuxt","PHP","Node JS","Express","Prisma ORM",],
+    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "Node JS", "Express", "Prisma ORM"],
   },
   {
     id: "3",
