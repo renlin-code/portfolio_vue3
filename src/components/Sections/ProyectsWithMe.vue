@@ -5,7 +5,7 @@
         Некоторые проекты с моим участием
       </h2>
       <div class="proyects__wrapper">
-        <div class="proyects__proyect" v-for="proyect in proyects">
+        <div class="proyects__proyect" v-for="proyect in proyectsResult">
           <h6 class="proyects__proyect-info-title renlincode-subtitle desktop-hidden">
             {{ proyect.title }}
           </h6>
@@ -45,14 +45,22 @@
           </div>
         </div>
       </div>
+      <button
+        v-if="proyectsMobShowing < proyects.length"
+        class="proyects__load-more renlincode-link opacity desktop-hidden"
+        @click="proyectsMobShowing = proyectsMobShowing + 2"
+      >
+        Загрузить еще проекты
+      </button>
     </div>
   </section>
 </template>
 
 <script setup>
 import skillIcon from "../Icons/skillIcon.vue";
-import { ref, reactive, onMounted } from "vue";
+import { ref, reactive, computed, nextTick, onMounted } from "vue";
 
+const clientWidth = ref(null);
 const proyects = reactive([
   {
     id: "0",
@@ -93,7 +101,17 @@ const proyects = reactive([
     ],
     deploy_address: "https://mirkv.ru",
     img_url: "https://imgur.com/pAAN7d0.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "Node JS", "Express", "Prisma ORM"],
+    stack: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SASS",
+      "Vue",
+      "Nuxt",
+      "Node JS",
+      "Express",
+      "Prisma ORM",
+    ],
   },
   {
     id: "3",
@@ -125,7 +143,7 @@ const proyects = reactive([
     details: [
       "Резиновая верстка всех страниц по макету",
       "Написание некоторых функционалов на нативном JS",
-      "(Еще в разработке)"
+      "(Еще в разработке)",
     ],
     deploy_address: "https://nelprow3.fvds.ru",
     img_url: "https://imgur.com/UzVumoZ.jpg",
@@ -137,7 +155,7 @@ const proyects = reactive([
     details: [
       "Резиновая верстка некоторых страниц по макету",
       "Написание некоторых функционалов на нативном JS",
-      "(Еще в разработке)"
+      "(Еще в разработке)",
     ],
     deploy_address: "https://nasledie.digital",
     img_url: "https://imgur.com/rd0fszb.jpg",
@@ -157,10 +175,20 @@ const proyects = reactive([
   },
 ]);
 
-const clientWidth = ref(null);
+const proyectsMobShowing = ref(2);
+
+const proyectsResult = computed(() => {
+  if (clientWidth.value > 650) {
+    startFlickity();
+    return proyects;
+  } else {
+    return proyects.slice(0, proyectsMobShowing.value);
+  }
+});
+
 const flkty = ref(null);
 
-const startFlickity = () => {
+const startFlickity = async () => {
   let options = {
     autoPlay: true,
     pauseAutoPlayOnHover: false,
@@ -169,14 +197,12 @@ const startFlickity = () => {
     selectedAttraction: 0.05,
     friction: 1,
   };
-  if (clientWidth.value > 650) {
-    flkty.value = new Flickity(".proyects__wrapper", options);
-  }
+  await nextTick();
+  flkty.value = new Flickity(".proyects__wrapper", options);
 };
 
 onMounted(() => {
   clientWidth.value = document.documentElement.clientWidth;
-  startFlickity();
 });
 </script>
 
@@ -275,6 +301,10 @@ onMounted(() => {
         }
       }
     }
+  }
+  &__load-more {
+    margin-top: 30rem;
+    font-size: 16rem;
   }
   .flickity {
     &-viewport {
