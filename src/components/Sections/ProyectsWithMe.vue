@@ -60,6 +60,7 @@
 import skillIcon from "../Icons/skillIcon.vue";
 import { ref, reactive, computed, nextTick, onMounted } from "vue";
 
+
 const clientWidth = ref(null);
 const proyects = reactive([
   {
