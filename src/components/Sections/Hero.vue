@@ -46,13 +46,13 @@ import AnimatedArrows from '../Icons/animatedArrows.vue';
     }
   }
   &__img {
-    width: 720rem;
+    width: 600rem;
     object-fit: contain;
     position: absolute;
     bottom: -53rem;
-    right: 70rem;
+    right: 100rem;
     @media only screen and (max-width: 650px) {
-      width: 100%;
+      width: 88%;
       right: 50%;
       bottom: -10rem;
       transform: translateX(50%);
