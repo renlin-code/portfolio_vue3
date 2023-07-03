@@ -53,14 +53,13 @@ const selectLang = (lang) => {
   const { origin } = window.location;
   const { locale } = langs[selectedIndex.value];
   if (locale === 'es' || locale === 'ru') {
-    window.location.replace(`${origin}/${locale}`)
+    window.location.replace(`${origin}?${locale}`)
   } else {
     window.location.replace(`${origin}`)
   }
 }
 const asignLang = () => {
-  const { pathname } = window.location;
-  const localeFromPathname = pathname.slice(1, 3);
+  const localeFromPathname = window.location.search.split('?')[1];
   const locale = localeFromPathname ? localeFromPathname : 'en'
   i18n.global.locale = locale;
   selectedIndex.value = langs.map(i => i.locale).indexOf(locale);
