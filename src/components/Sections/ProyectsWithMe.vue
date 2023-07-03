@@ -2,12 +2,12 @@
   <section id="proyects" class="proyects renlincode-section">
     <div class="proyects__content main-content-wrapper">
       <h2 class="proyects__title renlincode-title section-title">
-        Некоторые проекты с моим участием
+        {{ $t('projects_for_companies_section.title') }}
       </h2>
       <div class="proyects__wrapper">
-        <div class="proyects__proyect" v-for="proyect in proyectsResult">
+        <div class="proyects__proyect" v-for="(proyect, index) in proyectsResult">
           <h6 class="proyects__proyect-info-title renlincode-subtitle desktop-hidden">
-            {{ proyect.title }}
+            {{ $tm('projects_for_companies_section.projects_list')[index].title }}
           </h6>
           <div class="proyects__proyect-left">
             <a
@@ -23,21 +23,16 @@
           </div>
           <div class="proyects__proyect-info">
             <h6 class="proyects__proyect-info-title renlincode-subtitle mobile-hidden">
-              {{ proyect.title }}
+              {{ $tm('projects_for_companies_section.projects_list')[index].title }}
             </h6>
-            <p class="proyects__proyect-info-list-title">Что делал я по проекту:</p>
+            <p class="proyects__proyect-info-list-title">{{ $t('projects_for_companies_section.details_text') }}</p>
             <ul class="proyects__proyect-info-list">
-              <li v-for="detail in proyect.details">
-                {{ detail
-                }}{{
-                  proyect.details.indexOf(detail) !== proyect.details.length - 1
-                    ? ";"
-                    : "."
-                }}
+              <li v-for="detail in $tm('projects_for_companies_section.projects_list')[index].details">
+                {{ detail }}
               </li>
             </ul>
             <div class="proyects__proyect-info-tech">
-              <p class="proyects__proyect-info-tech-text">Стек проекта:</p>
+              <p class="proyects__proyect-info-tech-text">{{ $t('projects_for_companies_section.techs_text') }}</p>
               <ul>
                 <li v-for="tech in proyect.stack"><skillIcon :type="tech" /></li>
               </ul>
@@ -50,7 +45,7 @@
         class="proyects__load-more renlincode-link opacity desktop-hidden"
         @click="proyectsMobShowing = proyectsMobShowing + 2"
       >
-        Загрузить еще проекты
+        {{ $t('projects_for_companies_section.load_more_text') }}
       </button>
     </div>
   </section>
@@ -63,112 +58,41 @@ import { ref, reactive, computed, nextTick, onMounted } from "vue";
 const clientWidth = ref(null);
 const proyects = reactive([
   {
-    id: "0",
-    title: "Сайт интернет-провайдера с личным кабинетом",
-    details: [
-      "Резиновая верстка всех страниц по макету",
-      "Создание переключателя между темной и светлой темами",
-      "Написание и программирование всего Frontend на Nuxt2 (Options API)",
-      "Взаимодействие с Backend через REST API",
-      "Управление учетной записью c помощью JWT и localStorage",
-      "(Еще в разработке)",
-    ],
     deploy_address: "https://m2.choosedesign.ru",
     img_url: "https://imgur.com/CHVLTpL.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
-    id: "1",
-    title: "Сайт логистической компании с личным кабинетом",
-    details: [
-      "Резиновая верстка всех страниц по макету",
-      "Написание и программирование Frontend на Nuxt2 (Options API)",
-      "Взаимодействие с Backend через API",
-      "Создание анимации для всего сайта и сложного прелоудера",
-      "(Еще в разработке)",
-    ],
     deploy_address: "https://logist.llc.ru",
     img_url: "https://imgur.com/3njrv8c.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
-    id: "2",
-    title: "Сайт агентства недвижимости с каталогом объектов",
-    details: [
-      "Поддержка Frontend и Backend проекта и написание новых компонентов на Nuxt2 (Options API)",
-      "Взаимодействие с Backend через REST API",
-      "Правки по сайту",
-    ],
     deploy_address: "https://mirkv.ru",
     img_url: "https://imgur.com/pAAN7d0.jpg",
-    stack: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "SASS",
-      "Vue",
-      "Nuxt",
-      "Node JS",
-      "Express",
-      "Prisma ORM",
-    ],
+    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "Node JS", "Express", "Prisma ORM"],
   },
   {
-    id: "3",
-    title: "Корпоративный сайт компании SKYTECHNIC",
-    details: [
-      "Написание и программирование всего Frontend на Nuxt2 (Options API)",
-      "Взаимодействие с Backend через REST API",
-      "Создание анимации для всего сайта и сложного прелоудера",
-    ],
     deploy_address: "https://skytechnic.aero",
     img_url: "https://imgur.com/fw0e2iI.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
-    id: "4",
-    title: "Корпоративный сайт с аналитикой рынка E-commerce России",
-    details: [
-      "Поддержка Frontend проекта и написание новых компонентов на Nuxt2 (Options API)",
-      "Взаимодействие с Backend через REST API",
-      "Правки по сайту",
-    ],
     deploy_address: "https://akit.ru",
     img_url: "https://imgur.com/k31WsWo.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
-    id: "5",
-    title: "Интернет-магазин светильников и люстр оптом",
-    details: [
-      "Резиновая верстка всех страниц по макету",
-      "Написание некоторых функционалов на нативном JS",
-      "(Еще в разработке)",
-    ],
     deploy_address: "https://nelprow3.fvds.ru",
     img_url: "https://imgur.com/UzVumoZ.jpg",
     stack: ["HTML", "CSS", "JavaScript", "PHP", "1C Bitrix"],
   },
   {
-    id: "6",
-    title: "Nasledie – портал для создания “Капсулы жизни”",
-    details: [
-      "Резиновая верстка некоторых страниц по макету",
-      "Написание некоторых функционалов на нативном JS",
-      "(Еще в разработке)",
-    ],
     deploy_address: "https://nasledie.digital",
     img_url: "https://imgur.com/rd0fszb.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
-    id: "7",
-    title: "Cайт на Тильде с интеграцией с другими сервисами",
-    details: [
-      "Кастомизация некоторых блоков с помощью CSS",
-      "Интеграция с Unisender и Bitrix24",
-      "Написание дополнительного кода на нативном JS для кастомных функционалов",
-    ],
     deploy_address: "https://omnicdek.ru/",
     img_url: "https://imgur.com/dbUnquQ.jpg",
     stack: ["HTML", "CSS", "JavaScript", "Tilda"],

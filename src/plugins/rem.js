@@ -6,14 +6,14 @@ export default {
       let iw = iOS ? screen.width : window.innerWidth,
         ih = iOS ? screen.height : window.innerHeight;
 
-      let container_width = 1300; //кол-во пикселей, меньше которого включается резиновость,
+      let container_width = 1400; //кол-во пикселей, меньше которого включается резиновость,
       //сюда рекомендуется писать шиирину контейнера в фигме + 150 ~ 200px
 
       let mobile_width = 320; //Ширина мобильного фрейма в фигме
       switch (true) {
-        case iw > container_width:
-          document.documentElement.style.fontSize = "1px";
-          break;
+        // case iw > container_width:
+        //   document.documentElement.style.fontSize = "1px";
+        //   break;
         case iw > 650:
           document.documentElement.style.fontSize = iw / container_width + "px";
           break;

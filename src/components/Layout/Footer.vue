@@ -8,8 +8,8 @@
         <div class="footer__wrapper">
           <nav class="footer__nav">
             <ul class="footer__nav-list">
-              <li v-for="link in links">
-                <a class="underline" :href="link.href">{{ link.name }}</a>
+              <li v-for="(link, index) in $tm('nav_links')">
+                <a class="underline" :href="links[index]">{{ link }}</a>
               </li>
             </ul>
           </nav>
@@ -19,7 +19,7 @@
               <span class="renlincode-text">+7 (937) 321 72 99</span>
             </a>
             <span class="footer__link">
-              Я в GitHub:
+              {{ $t('footer.link_text') }}
               <a
                 class="renlincode-link opacity"
                 href="http://github.com/renlin-code/"
@@ -41,26 +41,7 @@ import contactIcon from "../Icons/contactIcon.vue";
 import { reactive } from "vue";
 
 const links = reactive([
-  {
-    name: "Обо мне",
-    href: "#about",
-  },
-  {
-    name: "Сертификаты",
-    href: "#certificates",
-  },
-  {
-    name: "Мои проекты",
-    href: "#works",
-  },
-  {
-    name: "Мое участвие",
-    href: "#proyects",
-  },
-  {
-    name: "Контакты",
-    href: "#contacts",
-  },
+  "#about", "#certificates", "#works", "#proyects", "#contacts"
 ]);
 </script>
 

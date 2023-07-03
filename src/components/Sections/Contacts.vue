@@ -1,7 +1,7 @@
 <template>
   <section id="contacts" class="contacts renlincode-section">
     <div class="contacts__content main-content-wrapper">
-      <h2 class="contacts__title renlincode-title section-title">Мои контакты</h2>
+      <h2 class="contacts__title renlincode-title section-title">{{ $t('contacts_section.title') }}</h2>
       <div class="contacts__wrapper">
         <ul class="contacts__list">
           <li>

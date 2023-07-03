@@ -1,8 +1,8 @@
 <template>
   <section id="home" class="hero">
     <div class="main-content-wrapper">
-      <p class="hero__subtitle renlincode-subtitle">frontend-разработчик</p>
-      <h1 class="hero__title renlincode-big-title">Рене Линарес</h1>
+      <p class="hero__subtitle renlincode-subtitle">{{ $t('hero_section.title') }}</p>
+      <h1 class="hero__title renlincode-big-title">{{ $t('hero_section.subtitle') }}</h1>
       <img
         class="hero__img"
         src="@/assets/images/banner-picture.png"
@@ -22,9 +22,12 @@ import AnimatedArrows from '../Icons/animatedArrows.vue';
 .hero {
   width: 100%;
   background: $black-color;
-  height: 585rem;
+  height: calc(100vh - 70rem);
   position: relative;
   overflow: hidden;
+  @media only screen and (max-width: 1050px) {
+    height: 600rem;
+  }
   @media only screen and (max-width: 650px) {
     height: 450rem;
   }
@@ -46,11 +49,14 @@ import AnimatedArrows from '../Icons/animatedArrows.vue';
     }
   }
   &__img {
-    width: 600rem;
+    width: 88vh;
     object-fit: contain;
     position: absolute;
-    bottom: -53rem;
+    bottom: -20rem;
     right: 100rem;
+    @media only screen and (max-width: 1050px) {
+      width: 600rem;
+    }
     @media only screen and (max-width: 650px) {
       width: 88%;
       right: 50%;

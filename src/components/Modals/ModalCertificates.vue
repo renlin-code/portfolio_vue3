@@ -12,7 +12,7 @@
       </figure>
     </div>
     <p class="modal-certificates__description">
-      {{ certificates[selected].description }}
+      {{ $tm('certificates_section.certificates_names_list')[selected] }}
     </p>
   </div>
 </template>
@@ -23,147 +23,126 @@ const certificates = reactive([
   {
     id: "0",
     name: "Curso de Frontend",
-    description: "Теоритический курс по Frontend-разработке",
     url: "https://imgur.com/lPnFzWv.png",
     url_mini: "https://imgur.com/nu9fObo.png",
   },
   {
     id: "1",
     name: "Curso Práctico de Frontend",
-    description: "Практический курс по Frontend-разработке",
     url: "https://imgur.com/QwLoaH5.png",
     url_mini: "https://imgur.com/zH3WhTM.png",
   },
   {
     id: "2",
     name: "Curso de HTML y CSS",
-    description: "Полный теоритический курс по HTML и CSS",
     url: "https://imgur.com/wHz3Oa6.png",
     url_mini: "https://imgur.com/8IgAiHa.png",
   },
   {
     id: "3",
     name: "Curso Práctico de HTML y CSS",
-    description: "Полный практический курс по HTML и CSS",
     url: "https://imgur.com/LqLRFCy.png",
     url_mini: "https://imgur.com/BlZhO9V.png",
   },
   {
     id: "4",
     name: "Curso de Responsive Design",
-    description: "Курс по адаптивной верстке Mobile First",
     url: "https://imgur.com/W8ZWjm1.png",
     url_mini: "https://imgur.com/1JLPaqK.png",
   },
   {
     id: "5",
     name: "Curso de la Terminal",
-    description: "Курс по терминалу",
     url: "https://imgur.com/hcVJ1jo.png",
     url_mini: "https://imgur.com/3uDr96l.png",
   },
   {
     id: "6",
     name: "Curso de Git y GitHub",
-    description: "Курс по Git и GitHub",
     url: "https://imgur.com/UiwBBwR.png",
     url_mini: "https://imgur.com/WrgAMhV.png",
   },
   {
     id: "7",
     name: "Curso Básico de JavaScript",
-    description: "Базовый теоритический курс по JavaScript",
     url: "https://imgur.com/UHzlGAX.png",
     url_mini: "https://imgur.com/1rojaBV.png",
   },
   {
     id: "8",
     name: "Curso Básico Práctico de JavaScript",
-    description: "Базовый практический курс по JavaScript",
     url: "https://imgur.com/NNFKnCT.png",
     url_mini: "https://imgur.com/ZArpOF6.png",
   },
   {
     id: "9",
     name: "Curso de Closures y Scope",
-    description: "Курс по Closures y Scope",
     url: "https://imgur.com/vespUZi.png",
     url_mini: "https://imgur.com/jzHr9tn.png",
   },
   {
     id: "10",
     name: "Curso de Ingeniería de Softwares",
-    description: "Курс по Software Engineering",
     url: "https://imgur.com/LqXd7rt.png",
     url_mini: "https://imgur.com/2cr7elT.png",
   },
   {
     id: "11",
     name: "Curso Básico de JS Orientado a Objetos",
-    description: "Базовый теоритический курс по ООП с JavaScript",
     url: "https://imgur.com/aOWvcBv.png",
     url_mini: "https://imgur.com/Pmc1N5B.png",
   },
   {
     id: "12",
     name: "Curso Intermedio de JS Orientado a Objetos",
-    description: "Средний теоритический курс по ООП с JavaScript",
     url: "https://imgur.com/QWtmWJ4.png",
     url_mini: "https://imgur.com/axTQSlK.png",
   },
   {
     id: "13",
     name: "Curso de Manipulación de Arrays",
-    description: "Курс по методам массивов",
     url: "https://imgur.com/Zlr8QHf.png",
     url_mini: "https://imgur.com/H8Vqclw.png",
   },
   {
     id: "14",
     name: "Curso de Asincronismo en JavaScript",
-    description: "Курс по асинхронности в JavaScript",
     url: "https://imgur.com/pKlbh37.png",
     url_mini: "https://imgur.com/ASfPE57.png",
   },
   {
     id: "15",
     name: "Curso de Diseño Web con Flexbox y CSS Grid",
-    description: "Курс по веб-дизайн c Flexbox и CSS Grid",
     url: "https://imgur.com/XaqS4sY.png",
     url_mini: "https://imgur.com/9cuPbZO.png",
   },
   {
     id: "16",
     name: "Curso de Transformaciones y Transiciones",
-    description: "Курс по CSS transform и transition",
     url: "https://imgur.com/5O43Uv3.png",
     url_mini: "https://imgur.com/Tf6FGqD.png",
   },
   {
     id: "17",
     name: "Curso de Ecmascript",
-    description: "Курс по Ecmascript",
     url: "https://imgur.com/J1h7fbJ.png",
     url_mini: "https://imgur.com/vEXaQT9.png",
   },
   {
     id: "18",
     name: "Curso de consumo de API REST con JavaScript",
-    description: "Курс по REST API с JavaScript",
     url: "https://imgur.com/Q7xjcoH.png",
     url_mini: "https://imgur.com/IaEjX5r.png",
   },
   {
     id: "19",
     name: "Curso de Fundamentos de TypeScript",
-    description: "Курс основы TypeScript",
     url: "https://imgur.com/KMpeNwD.png",
     url_mini: "https://imgur.com/RThXdd2.png",
   },
   {
     id: "20",
     name: "Curso de Vue.js: Introducción y fundamentos",
-    description: "Курс основы Vue.js",
     url: "https://imgur.com/QX6noWs.png",
     url_mini: "https://imgur.com/4z9NM9C.png",
   },

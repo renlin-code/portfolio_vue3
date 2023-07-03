@@ -1,39 +1,22 @@
 <template>
   <nav class="nav-menu" :class="{ 'nav-menu--open': open }" >
     <ul class="nav-menu__list">
-      <li v-for="link in links">
-        <a class="underline" :href="link.href" @click="$emit('selectedNavItem')">{{
-          link.name
-        }}</a>
+      <li v-for="(link, index) in $tm('nav_links')">
+        <a class="underline" :href="links[index]" @click="$emit('selectedNavItem')">{{ link }}</a>
       </li>
     </ul>
+    <div class="nav-menu__lang desktop-hidden">
+      <LangSelector />
+    </div>
   </nav>
 </template>
 
 <script setup>
+import LangSelector from "../Buttons/LangSelector.vue";
 import { reactive } from "vue";
 
 const links = reactive([
-  {
-    name: "Обо мне",
-    href: "#about",
-  },
-  {
-    name: "Сертификаты",
-    href: "#certificates",
-  },
-  {
-    name: "Личные проекты",
-    href: "#works",
-  },
-  {
-    name: "C моим участием",
-    href: "#proyects",
-  },
-  {
-    name: "Контакты",
-    href: "#contacts",
-  },
+  "#about", "#certificates", "#works", "#proyects", "#contacts"
 ]);
 
 const props = defineProps({
@@ -50,6 +33,7 @@ const emit = defineEmits(["selectedNavItem"]);
   @media only screen and (max-width: 650px) {
     display: grid;
     place-content: center;
+    gap: 70rem;
     position: fixed;
     left: 0;
     top: calc(-100vh + 66rem);
@@ -61,7 +45,7 @@ const emit = defineEmits(["selectedNavItem"]);
   &__list {
     list-style: none;
     display: flex;
-    gap: 30rem;
+    gap: 24rem;
     @media only screen and (max-width: 650px) {
       flex-direction: column;
       justify-content: center;
@@ -73,6 +57,10 @@ const emit = defineEmits(["selectedNavItem"]);
     a {
       color: $white-color;
     }
+  }
+  &__lang {
+    display: flex;
+    justify-content: center;
   }
   &--open {
     @media only screen and (max-width: 650px) {

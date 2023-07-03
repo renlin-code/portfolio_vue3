@@ -1,15 +1,17 @@
 <template>
   <section id="works" class="works renlincode-section">
     <div class="works__content main-content-wrapper">
-      <h2 class="works__title renlincode-title section-title">Мои проекты</h2>
+      <h2 class="works__title renlincode-title section-title">
+        {{ $t("personal_projects_section.title") }}
+      </h2>
       <div class="works__wrapper">
         <div
           class="works__work"
           :class="{ reverse: works.indexOf(work) % 2 !== 0 }"
-          v-for="work in works"
+          v-for="(work, index) in works"
         >
           <h6 class="works__work-info-title renlincode-subtitle desktop-hidden">
-            {{ work.title }}
+            {{ $tm("personal_projects_section.projects_list")[index].title }}
           </h6>
 
           <div class="works__work-left">
@@ -22,18 +24,19 @@
           </div>
           <div class="works__work-info">
             <h6 class="works__work-info-title renlincode-subtitle mobile-hidden">
-              {{ work.title }}
+              {{ $tm("personal_projects_section.projects_list")[index].title }}
             </h6>
             <ul class="works__work-info-list">
-              <li v-for="detail in work.details">
-                {{ detail
-                }}{{
-                  work.details.indexOf(detail) !== work.details.length - 1 ? ";" : "."
-                }}
+              <li
+                v-for="detail in $tm(
+                  'personal_projects_section.projects_list'
+                )[index].details"
+              >
+                {{ detail }}
               </li>
             </ul>
             <div class="works__work-info-tech">
-              <p class="works__work-info-tech-text">В этом проекте я использовал:</p>
+              <p class="works__work-info-tech-text">{{ $t('personal_projects_section.techs_text') }}</p>
               <ul>
                 <li v-for="tech in work.stack"><skillIcon :type="tech" /></li>
               </ul>
@@ -42,8 +45,10 @@
               target="_blank"
               :href="work.repo_address"
               class="works__work-info-link renlincode-link opacity"
-              >Посмотреть репозиторий</a
             >
+              {{ $t('personal_projects_section.link_text') }}
+              <Arrow2 />
+            </a>
           </div>
         </div>
       </div>
@@ -52,62 +57,30 @@
 </template>
 
 <script setup>
+import Arrow2 from "../Icons/arrow2.vue";
 import skillIcon from "../Icons/skillIcon.vue";
 import { reactive } from "vue";
 
 const works = reactive([
   {
-    id: "0",
-    title: "Веб приложение для отслеживания ежедневных задач (Frontend)",
-    details: [
-      "Резиновая верстка макетов ориентированная под мобильными устройствами",
-      "Создание и написание компонентов и программирование их функциональности (Nuxt2 - Options API)",
-      "Самодействие с Backend через RESTful API",
-      "Управление учетной записью c помощью JWT и localStorage",
-      "Запуск приложения в режиме SPA (Single Page App) и PWA (Progressive Web App)",
-    ],
     deploy_address: "https://time-master.netlify.app/",
     repo_address: "https://github.com/renlin-code/time-master_frontend",
     img_url: "https://imgur.com/UkNyv8P.png",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt"],
   },
   {
-    id: "2",
-    title: "Веб приложение для отслеживания ежедневных задач (Backend)",
-    details: [
-      "Создание и настройка базы данных на Postgres SQL",
-      "CRUD-сервис для управления данными в базе",
-      "Middlewares для фильтрации запросов с клиентской стороны и также для аутентификации и авторизации c помощью JWT",
-      "Написание endpoints для RESTful API",
-      "Подключение к SMTP-серверу для отправления пользователю емайлов для подтверждения почты и восстановления пароля",
-    ],
     deploy_address: "https://time-master.netlify.app/",
     repo_address: "https://github.com/renlin-code/time-master_backend",
     img_url: "https://imgur.com/UfeYIXh.png",
     stack: ["JavaScript", "Node JS", "Express", "Sequelize ORM", "Postgres SQL"],
   },
   {
-    id: "3",
-    title: "Веб приложение - аналог настольной игры “Spyfall”",
-    details: [
-      "Резиновая верстка макетов ориентированная под мобильными устройствами",
-      "Создание и написание компонентов и программирование их функциональности (Vue2 - Options API)",
-      "Использование sessionStorage и localStorage для постоянства данных так как приложение работает без Backend",
-      "Vue-router для навигации",
-    ],
     deploy_address: "https://spyfall-game.netlify.app/#",
     repo_address: "https://github.com/renlin-code/spyfall_2.0",
     img_url: "https://imgur.com/izC2j8g.png",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue"],
   },
   {
-    id: "4",
-    title: "Мое собственное портфолио",
-    details: [
-      "Резиновая верстка макетов",
-      "Создание и написание компонентов и программирование их функциональности (Vue3 - Composition API)",
-      "Статичная страница без Backend",
-    ],
     deploy_address: "https://renlin-code.online/",
     repo_address: "https://github.com/renlin-code/portfolio",
     img_url: "https://imgur.com/Tq76ppo.png",
@@ -195,8 +168,12 @@ const works = reactive([
           list-style: none;
         }
       }
+      &-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 4rem;
+      }
     }
-
     &.reverse {
       flex-direction: row-reverse;
     }

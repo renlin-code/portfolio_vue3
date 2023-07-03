@@ -15,7 +15,7 @@
         :open="menuOpen"
         @selectedNavItem="menuOpen = false"
       />
-
+      <LangSelector class="mobile-hidden" />
       <a target="_blank" class="header__phone opacity" href="tel:+79373217299">
         <contactIcon type="phone" class="header__phone-icon" />
         <span class="mobile-hidden">+7 (937) 321 72 99</span>
@@ -31,6 +31,7 @@ import BurgerButton from "../Buttons/BurgerButton.vue";
 import NavMenu from "../Navigation/NavMenu.vue";
 import contactIcon from "../Icons/contactIcon.vue";
 import RenlinCodeLogo from "../Logos/renlinCodeLogo.vue";
+import LangSelector from "../Buttons/LangSelector.vue";
 
 import { ref, watch, onMounted } from "vue";
 
