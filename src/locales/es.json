@@ -20,14 +20,14 @@
     "skills_block": {
       "text": "Habilidades que poseo:",
       "skills_list": [
-        "Strong knowledge of HTML, CSS, JavaScript, TypeScript and SASS/SCSS preprocessor;",
-        "Specialized knowledge in the Vue/Nuxt frameworks (options API and composition API) and in other modules of this ecosystem (Vue Router, Vuex, Pinia, Vuetify);",
-        "Layout compatible with different browsers, responsive and/or elastic, according to the BEM methodology, with semantic code, as well as animations and CSS transitions;",
-        "Deep understanding of the asynchronous nature of JavaScript and its application on the backend and frontend. Writing high-quality, best-practice asynchronous code for sending/handling requests to REST APIs;",
-        "Domain of MVC and FLUX architectures;",
-        "Good knowledge of the Node runtime environment and the Express backend framework. Basic understanding of databases and Postgres SQL;",
-        "Good knowledge of TypeScript;",
-        "I work with the terminal and use the Git version control system in each project."
+        "Sólidos conocimientos de HTML, CSS, JavaScript, TypeScript y preprocesador SASS/SCSS;",
+        "Conocimientos especializados en los frameworks Vue/Nuxt (options API y composition API) y en otros módulos de este ecosistema(Vue Router, Vuex, Pinia, Vuetify);",
+        "Maquetado compatibles con diferentes navegadores, responsivo y/o elástico, acorde a la metodología BEM, con código semántico, así como animaciones y transiciones CSS;",
+        "Profunda comprensión de la naturaleza asíncrona de JavaScript y su aplicación en el backend y frontend. Escritura de código asíncrono de alta calidad y con buenas prácticas para enviar/manejar solicitudes a APIs REST;",
+        "Dominio de las arquitecturas MVC y FLUX;",
+        "Buen conocimiento del entorno de ejecución Node y el framework de backend Express. Comprensión básica de bases de datos y Postgres SQL;",
+        "Buen conocimiento de TypeScript;",
+        "Trabajo con la terminal y uso del sistema de control de versiones Git en cada proyecto."
       ]
     }
   },
