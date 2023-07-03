@@ -1,7 +1,7 @@
 {
   "seo_metadata": {
     "title": "Frontend developer Rene Linares",
-    "description": "Hi! My name is Rene, and I'm a frontend developer with 2 years of experience. I'm Cuban but have been living in Russia for over 4 years, so I speak Russian very well and have the right to work in this country. I have professional expertise in HTML, CSS, JavaScript, and Vue and Nuxt frameworks. I also have experience with backend technologies like Node and Express. Additionally, I'm familiar with various development tools such as Git, Webpack, Vite, Gulp, and others. My skills enable me to successfully fulfill my responsibilities, including handling complex tasks, and I'm constantly striving for professional growth. I would be happy to assist your company in creating high-quality and modern websites and applications."
+    "description": "Hi! My name is Rene, and I am a frontend developer with 2 years of experience. I am Cuban, but I have been living in Russia for over 4 years, so I speak Russian very well and have permission to work in this country. I have professional experience in frontend development, especially with Vue and Nuxt frameworks. My skills allow me to successfully fulfill my responsibilities, including handling complex tasks, and I am constantly seeking professional growth."
   },
   "nav_links": [
     "About me",
@@ -16,7 +16,7 @@
   },
   "about_me_section": {
     "title": "About me",
-    "text": "Hi! My name is Rene, and I'm a frontend developer with 2 years of experience.<br />I'm Cuban but have been living in Russia for over 4 years, so I speak Russian very well and have the right to work in this country.<br />I have professional expertise in HTML, CSS, JavaScript, and Vue and Nuxt frameworks. I also have experience with backend technologies like Node and Express. Additionally, I'm familiar with various development tools such as Git, Webpack, Vite, Gulp, and others. My skills enable me to successfully fulfill my responsibilities, including handling complex tasks, and I'm constantly striving for professional growth. I would be happy to assist your company in creating high-quality and modern websites and applications.",
+    "text": "Hi! My name is Rene, and I am a frontend developer with 2 years of experience.<br />I am Cuban, but I have been living in Russia for more than 4 years, so I speak Russian very well and I have permission to work in this country.<br />I have professional experience in frontend development, especially with the Vue and Nuxt frameworks.",
     "skills_block": {
       "text": "Skills I possess:",
       "skills_list": [

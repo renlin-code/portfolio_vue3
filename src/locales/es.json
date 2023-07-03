@@ -1,7 +1,7 @@
 {
   "seo_metadata": {
     "title": "Desarrollador frontend René Linares",
-    "description": "¡Hola! Mi nombre es René, y soy un desarrollador frontend con 2 años de experiencia. Soy cubano, pero llevo más de 4 años viviendo en Rusia, así que hablo muy bien el ruso y tengo el derecho de trabajar en este país. Tengo experiencia profesional en HTML, CSS, JavaScript y los frameworks Vue y Nuxt. También tengo experiencia con tecnologías de backend como Node y Express. Además, estoy familiarizado con varias herramientas de desarrollo como Git, Webpack, Vite, Gulp y otras. Mis habilidades me permiten cumplir con mis responsabilidades de manera exitosa, incluyendo el manejo de tareas complejas, y estoy constantemente buscando el crecimiento profesional. Me encantaría ayudar a su empresa a crear sitios web y aplicaciones modernas y de alta calidad."
+    "description": "¡Hola! Mi nombre es René, y soy desarrollador frontend con 2 años de experiencia. Soy cubano, pero llevo más de 4 años viviendo en Rusia, así que hablo muy bien el ruso y tengo el derecho de trabajar en este país. Tengo experiencia profesional en HTML, CSS, JavaScript y los frameworks Vue y Nuxt. También tengo experiencia con tecnologías de backend como Node y Express. Además, estoy familiarizado con varias herramientas de desarrollo como Git, Webpack, Vite, Gulp y otras. Mis habilidades me permiten cumplir con mis responsabilidades de manera exitosa, incluyendo el manejo de tareas complejas, y estoy constantemente buscando el crecimiento profesional. Me encantaría ayudar a su empresa a crear sitios web y aplicaciones modernas y de alta calidad."
   },
   "nav_links": [
     "Sobre mí",
@@ -16,16 +16,18 @@
   },
   "about_me_section": {
     "title": "Sobre mí",
-    "text": "¡Hola! Mi nombre es René, y soy un desarrollador frontend con 2 años de experiencia.<br />Soy cubano, pero llevo más de 4 años viviendo en Rusia, así que hablo muy bien el ruso y tengo el derecho de trabajar en este país.<br />Tengo experiencia profesional en HTML, CSS, JavaScript y los frameworks Vue y Nuxt. También tengo experiencia con tecnologías de backend como Node y Express. Además, estoy familiarizado con varias herramientas de desarrollo como Git, Webpack, Vite, Gulp y otras. Mis habilidades me permiten cumplir con mis responsabilidades de manera exitosa, incluyendo el manejo de tareas complejas, y estoy constantemente buscando el crecimiento profesional. Me encantaría ayudar a su empresa a crear sitios web y aplicaciones modernas y de alta calidad.",
+    "text": "¡Hola! Mi nombre es René, y soy desarrollador frontend con 2 años de experiencia.<br />Soy cubano, pero llevo más de 4 años viviendo en Rusia, así que hablo muy bien el ruso y tengo permiso para trabajar en este país.<br />Tengo experiencia profesional en el desarollo frontend en especial con los frameworks Vue y Nuxt. Mis habilidades me permiten cumplir con mis responsabilidades de manera exitosa, incluyendo el manejo de tareas complejas, y estoy constantemente buscando el crecimiento profesional.",
     "skills_block": {
       "text": "Habilidades que poseo:",
       "skills_list": [
-        "Sólidos conocimientos de HTML, CSS, JavaScript, preprocesador SASS/SCSS, y los frameworks Vue y Nuxt;",
-        "Creación de diseños compatibles con diferentes navegadores, adaptativos y/o fluidos, con código válido, así como animaciones y transiciones CSS;",
-        "Intensa comprensión de la naturaleza asíncrona de JavaScript y su aplicación en el Backend y Frontend. Escritura de código asíncrono de alta calidad y gramaticalmente correcto para enviar/manejar solicitudes a APIs REST;",
-        "Buen conocimiento del entorno de ejecución Node y el framework de backend Express. Comprensión básica de bases de datos y Postgres SQL;",
-        "Competente en TypeScript;",
-        "Trabajo con la terminal y uso del sistema de control de versiones Git en cada proyecto."
+        "Strong knowledge of HTML, CSS, JavaScript, TypeScript and SASS/SCSS preprocessor;",
+        "Specialized knowledge in the Vue/Nuxt frameworks (options API and composition API) and in other modules of this ecosystem (Vue Router, Vuex, Pinia, Vuetify);",
+        "Layout compatible with different browsers, responsive and/or elastic, according to the BEM methodology, with semantic code, as well as animations and CSS transitions;",
+        "Deep understanding of the asynchronous nature of JavaScript and its application on the backend and frontend. Writing high-quality, best-practice asynchronous code for sending/handling requests to REST APIs;",
+        "Domain of MVC and FLUX architectures;",
+        "Good knowledge of the Node runtime environment and the Express backend framework. Basic understanding of databases and Postgres SQL;",
+        "Good knowledge of TypeScript;",
+        "I work with the terminal and use the Git version control system in each project."
       ]
     }
   },
