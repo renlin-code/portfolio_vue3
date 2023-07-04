@@ -21,8 +21,10 @@
       "text": "Skills I possess:",
       "skills_list": [
         "Solid knowledge of HTML, CSS, JavaScript, SASS/SCSS preprocessor, Vue and Nuxt frameworks;",
+        "Specialized knowledge of the framework Vue/Nuxt (options API and compositions API) and other modules of this ecosystem (Vue Router, Vuex, Pinia, Vuetify);",
         "Creating cross-browser compatible, responsive, and/or fluid layouts with valid code, as well as CSS animations and transitions;",
         "Deep understanding of JavaScript's asynchronous nature and its application in Backend and Frontend. Writing high-quality and grammatically correct asynchronous code for sending/handling requests to REST APIs;",
+        "Good understanding of the MVC and FLUX architectures;",
         "Good knowledge of Node runtime environment and Express backend framework. Basic understanding of databases and Postgres SQL;",
         "Proficient in TypeScript;",
         "Working with the terminal and using Git version control system in every project."
