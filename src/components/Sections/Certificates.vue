@@ -147,7 +147,7 @@ const certificates = reactive([
   },
   {
     id: "17",
-    name: "Curso de Ecmascript",
+    name: "Curso de Ecmascript 6+",
     url: "https://imgur.com/J1h7fbJ.png",
     url_mini: "https://imgur.com/vEXaQT9.png",
   },

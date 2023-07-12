@@ -27,6 +27,7 @@
         "Dominio de las arquitecturas MVC y FLUX;",
         "Buen conocimiento del entorno de ejecución Node y el framework de backend Express. Comprensión básica de bases de datos y Postgres SQL;",
         "Buen conocimiento de TypeScript;",
+        "Buen conocimiento de Websocket y la librería Socket.io;",
         "Trabajo con la terminal y uso del sistema de control de versiones Git en cada proyecto."
       ]
     }
