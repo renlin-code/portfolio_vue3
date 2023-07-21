@@ -63,7 +63,7 @@ const proyects = reactive([
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
   {
-    deploy_address: "https://logist.llc.ru",
+    deploy_address: "https://logistllc.ru",
     img_url: "https://imgur.com/3njrv8c.jpg",
     stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
   },
