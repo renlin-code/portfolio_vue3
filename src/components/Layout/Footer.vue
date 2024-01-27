@@ -41,7 +41,7 @@ import contactIcon from "../Icons/contactIcon.vue";
 import { reactive } from "vue";
 
 const links = reactive([
-  "#about", "#certificates", "#works", "#proyects", "#contacts"
+  "#about", "#certificates", "#works", "#projects", "#contacts"
 ]);
 </script>
 

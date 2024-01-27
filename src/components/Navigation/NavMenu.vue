@@ -16,7 +16,7 @@ import LangSelector from "../Buttons/LangSelector.vue";
 import { reactive } from "vue";
 
 const links = reactive([
-  "#about", "#certificates", "#works", "#proyects", "#contacts"
+  "#about", "#certificates", "#works", "#projects", "#contacts"
 ]);
 
 const props = defineProps({

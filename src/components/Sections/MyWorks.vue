@@ -59,34 +59,8 @@
 <script setup>
 import Arrow2 from "../Icons/arrow2.vue";
 import skillIcon from "../Icons/skillIcon.vue";
-import { reactive } from "vue";
+import works from "./works.json";
 
-const works = reactive([
-  {
-    deploy_address: "https://time-master.netlify.app/",
-    repo_address: "https://github.com/renlin-code/time-master_frontend",
-    img_url: "https://imgur.com/UkNyv8P.png",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt"],
-  },
-  {
-    deploy_address: "https://time-master.netlify.app/",
-    repo_address: "https://github.com/renlin-code/time-master_backend",
-    img_url: "https://imgur.com/UfeYIXh.png",
-    stack: ["JavaScript", "Node JS", "Express", "Sequelize ORM", "Postgres SQL"],
-  },
-  {
-    deploy_address: "https://spyfall-game.netlify.app/#",
-    repo_address: "https://github.com/renlin-code/spyfall_2.0",
-    img_url: "https://imgur.com/izC2j8g.png",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue"],
-  },
-  {
-    deploy_address: "https://renlin-code.online/",
-    repo_address: "https://github.com/renlin-code/portfolio",
-    img_url: "https://imgur.com/Tq76ppo.png",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue"],
-  },
-]);
 </script>
 
 <style scoped lang="scss">

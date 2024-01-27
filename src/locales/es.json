@@ -28,7 +28,7 @@
         "Buen conocimiento del entorno de ejecución Node y el framework de backend Express. Comprensión básica de bases de datos y Postgres SQL;",
         "Buen conocimiento de TypeScript;",
         "Buen conocimiento de Websocket y la librería Socket.io;",
-        "Trabajo con la terminal y uso del sistema de control de versiones Git en cada proyecto."
+        "Trabajo con la terminal y uso del sistema de control de versiones Git en cada projecto."
       ]
     }
   },
@@ -61,7 +61,7 @@
   },
   "personal_projects_section": {
     "title": "Mis proyectos personales",
-    "techs_text": "En este proyecto he utilizado:",
+    "techs_text": "En este projecto he utilizado:",
     "link_text": "Ver el repositorio",
     "projects_list": [
       {
@@ -106,7 +106,7 @@
   },
   "projects_for_companies_section": {
     "title": "Algunos proyectos con mi participación",
-    "details_text": "Que hice yo en el proyecto:",
+    "details_text": "Que hice yo en el projecto:",
     "techs_text": "Stack del projecto:",
     "load_more_text": "Ver más proyectos",
     "projects_list": [
@@ -134,7 +134,7 @@
       {
         "title": "Sitio web de agencia de inmobiliarios con catálogo de objetos",
         "details": [
-          "Soporte del Frontend y Backend del proyecto y escritura de nuevos componentes en Nuxt2 (Options API);",
+          "Soporte del Frontend y Backend del projecto y escritura de nuevos componentes en Nuxt2 (Options API);",
           "Interacción con el Backend a través de una API REST;",
           "Correcciones en el sitio web."
         ]
@@ -150,7 +150,7 @@
       {
         "title": "Sitio web corporativo con análisis de mercado de comercio electrónico en Rusia",
         "details": [
-          "Soporte del Frontend y Backend del proyecto y escritura de nuevos componentes en Nuxt2 (Options API);",
+          "Soporte del Frontend y Backend del projecto y escritura de nuevos componentes en Nuxt2 (Options API);",
           "Interacción con el Backend a través de una API REST;",
           "Correcciones en el sitio web."
         ]

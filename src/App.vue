@@ -7,7 +7,7 @@
       <AboutMe />
       <Certificates />
       <MyWorks />
-      <ProyectsWithMe />
+      <ProjectsWithMe />
       <Contacts />
     </main>
     <Footer />
@@ -26,7 +26,7 @@ import Certificates from "./components/Sections/Certificates.vue";
 import MyWorks from "./components/Sections/MyWorks.vue";
 import Contacts from "./components/Sections/Contacts.vue";
 import Footer from "@/components/Layout/Footer.vue";
-import ProyectsWithMe from "./components/Sections/ProyectsWithMe.vue";
+import ProjectsWithMe from "./components/Sections/ProjectsWithMe.vue";
 
 // const { t } = useI18n();
 // useHead({

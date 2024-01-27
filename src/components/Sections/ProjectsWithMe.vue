@@ -1,49 +1,49 @@
 <template>
-  <section id="proyects" class="proyects renlincode-section">
-    <div class="proyects__content main-content-wrapper">
-      <h2 class="proyects__title renlincode-title section-title">
+  <section id="projects" class="projects renlincode-section">
+    <div class="projects__content main-content-wrapper">
+      <h2 class="projects__title renlincode-title section-title">
         {{ $t('projects_for_companies_section.title') }}
       </h2>
-      <div class="proyects__wrapper">
-        <div class="proyects__proyect" v-for="(proyect, index) in proyectsResult">
-          <h6 class="proyects__proyect-info-title renlincode-subtitle desktop-hidden">
+      <div class="projects__wrapper">
+        <div class="projects__project" v-for="(project, index) in projectsResult">
+          <h6 class="projects__project-info-title renlincode-subtitle desktop-hidden">
             {{ $tm('projects_for_companies_section.projects_list')[index].title }}
           </h6>
-          <div class="proyects__proyect-left">
+          <div class="projects__project-left">
             <a
-              :href="proyect.deploy_address"
+              :href="project.deploy_address"
               target="_blank"
-              class="proyects__proyect-img-link"
+              class="projects__project-img-link"
             >
               <figure class="onhover-light">
-                <img :src="proyect.img_url" alt="" />
+                <img :src="project.img_url" alt="" />
                 <div class="front-layer"></div>
               </figure>
             </a>
           </div>
-          <div class="proyects__proyect-info">
-            <h6 class="proyects__proyect-info-title renlincode-subtitle mobile-hidden">
+          <div class="projects__project-info">
+            <h6 class="projects__project-info-title renlincode-subtitle mobile-hidden">
               {{ $tm('projects_for_companies_section.projects_list')[index].title }}
             </h6>
-            <p class="proyects__proyect-info-list-title">{{ $t('projects_for_companies_section.details_text') }}</p>
-            <ul class="proyects__proyect-info-list">
+            <p class="projects__project-info-list-title">{{ $t('projects_for_companies_section.details_text') }}</p>
+            <ul class="projects__project-info-list">
               <li v-for="detail in $tm('projects_for_companies_section.projects_list')[index].details">
                 {{ detail }}
               </li>
             </ul>
-            <div class="proyects__proyect-info-tech">
-              <p class="proyects__proyect-info-tech-text">{{ $t('projects_for_companies_section.techs_text') }}</p>
+            <div class="projects__project-info-tech">
+              <p class="projects__project-info-tech-text">{{ $t('projects_for_companies_section.techs_text') }}</p>
               <ul>
-                <li v-for="tech in proyect.stack"><skillIcon :type="tech" /></li>
+                <li v-for="tech in project.stack"><skillIcon :type="tech" /></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       <button
-        v-if="proyectsMobShowing < proyects.length"
-        class="proyects__load-more renlincode-link opacity desktop-hidden"
-        @click="proyectsMobShowing = proyectsMobShowing + 2"
+        v-if="projectsMobShowing < projects.length"
+        class="projects__load-more renlincode-link opacity desktop-hidden"
+        @click="projectsMobShowing = projectsMobShowing + 2"
       >
         {{ $t('projects_for_companies_section.load_more_text') }}
       </button>
@@ -53,60 +53,18 @@
 
 <script setup>
 import skillIcon from "../Icons/skillIcon.vue";
-import { ref, reactive, computed, nextTick, onMounted } from "vue";
+import { ref, computed, nextTick, onMounted } from "vue";
+import projects from "./projects.json";
 
 const clientWidth = ref(null);
-const proyects = reactive([
-  {
-    deploy_address: "https://m2.choosedesign.ru",
-    img_url: "https://imgur.com/CHVLTpL.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
-  },
-  {
-    deploy_address: "https://logistllc.ru",
-    img_url: "https://imgur.com/3njrv8c.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
-  },
-  {
-    deploy_address: "https://mirkv.ru",
-    img_url: "https://imgur.com/pAAN7d0.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "Node JS", "Express", "Prisma ORM"],
-  },
-  {
-    deploy_address: "https://skytechnic.aero",
-    img_url: "https://imgur.com/fw0e2iI.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
-  },
-  {
-    deploy_address: "https://akit.ru",
-    img_url: "https://imgur.com/k31WsWo.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
-  },
-  {
-    deploy_address: "https://nelprow3.fvds.ru",
-    img_url: "https://imgur.com/UzVumoZ.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "PHP", "1C Bitrix"],
-  },
-  {
-    deploy_address: "https://nasledie.digital",
-    img_url: "https://imgur.com/rd0fszb.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"],
-  },
-  {
-    deploy_address: "https://omnicdek.ru/",
-    img_url: "https://imgur.com/dbUnquQ.jpg",
-    stack: ["HTML", "CSS", "JavaScript", "Tilda"],
-  },
-]);
+const projectsMobShowing = ref(2);
 
-const proyectsMobShowing = ref(2);
-
-const proyectsResult = computed(() => {
+const projectsResult = computed(() => {
   if (clientWidth.value > 650) {
     startFlickity();
-    return proyects;
+    return projects;
   } else {
-    return proyects.slice(0, proyectsMobShowing.value);
+    return projects.slice(0, projectsMobShowing.value);
   }
 });
 
@@ -122,7 +80,7 @@ const startFlickity = async () => {
     friction: 1,
   };
   await nextTick();
-  flkty.value = new Flickity(".proyects__wrapper", options);
+  flkty.value = new Flickity(".projects__wrapper", options);
 };
 
 onMounted(() => {
@@ -131,14 +89,14 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-.proyects {
+.projects {
   width: 100%;
   background: $black-color;
   overflow: hidden;
   &__title {
     color: $white-color;
   }
-  &__proyect {
+  &__project {
     width: 1100rem;
     display: grid;
     grid-template-columns: 443rem 1fr;

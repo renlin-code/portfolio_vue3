@@ -60,7 +60,7 @@ const selectLang = (lang) => {
 }
 const asignLang = () => {
   const localeFromPathname = window.location.search.split('?')[1];
-  const locale = localeFromPathname ? localeFromPathname : 'en'
+  const locale = localeFromPathname === 'es' || localeFromPathname === 'ru' ? localeFromPathname : 'en'
   i18n.global.locale = locale;
   selectedIndex.value = langs.map(i => i.locale).indexOf(locale);
 }
