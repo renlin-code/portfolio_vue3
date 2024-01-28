@@ -1,7 +1,7 @@
 [
   {
     "deploy_address": "https://time-master.netlify.app/",
-    "repo_address": "https://github.com/renlin-code/time-master_frontend",
+    "repo_address": "https://github.com/renlin-code/timemaster_frontend",
     "img_url": "https://imgur.com/UkNyv8P.png",
     "stack": ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt"]
   },
