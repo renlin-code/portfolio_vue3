@@ -42,12 +42,13 @@
               </ul>
             </div>
             <a
+              v-if="work.repo_address"
               target="_blank"
               :href="work.repo_address"
               class="works__work-info-link renlincode-link opacity"
             >
               {{ $t('personal_projects_section.link_text') }}
-              <Arrow2 />
+              <Arrow2 class="works__work-info-link-arrow" />
             </a>
           </div>
         </div>

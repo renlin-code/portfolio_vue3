@@ -94,12 +94,13 @@
         ]
       },
       {
-        "title": "Mi propio portafolio",
+        "title": "Blog sobre IT y cursos en línea",
         "details": [
           "Maquteado elástico del diseño;",
-          "Creación y escritura de componentes y programación de su funcionalidad (Vue3 - Composition API);",
-          "Página estática sin Backend;",
-          "Internacionalización en diferentes idiomas."
+          "Creación y escritura de componentes y programación de su funcionalidad (Nuxt2 - Options API);",
+          "Personalización del panel de administración de Wordpress usando lenguaje PHP;",
+          "Creación de un Backend y una API;",
+          "Integración con CMS (Wordpress) a través de API."
         ]
       }
     ]

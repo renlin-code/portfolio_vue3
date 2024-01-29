@@ -18,9 +18,9 @@
     "stack": ["HTML", "CSS", "JavaScript", "SASS", "Vue"]
   },
   {
-    "deploy_address": "https://renlin-code.online/",
-    "repo_address": "https://github.com/renlin-code/portfolio",
-    "img_url": "https://imgur.com/Tq76ppo.png",
-    "stack": ["HTML", "CSS", "JavaScript", "SASS", "Vue"]
+    "deploy_address": "https://skills-booster.ru",
+    "repo_address": null,
+    "img_url": "https://imgur.com/iPM1tx5.png",
+    "stack": ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"]
   }
 ]

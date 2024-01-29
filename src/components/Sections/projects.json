@@ -1,6 +1,6 @@
 [
   {
-    "deploy_address": "https://m2.choosedesign.ru",
+    "deploy_address": "https://m2connect.ru",
     "img_url": "https://imgur.com/CHVLTpL.jpg",
     "stack": ["HTML", "CSS", "JavaScript", "SASS", "Vue", "Nuxt", "PHP", "Wordpress"]
   },
