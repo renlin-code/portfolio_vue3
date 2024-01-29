@@ -66,7 +66,7 @@ import AnimatedArrows from '../Icons/animatedArrows.vue';
   }
   &__arrows {
     position: absolute;
-    bottom: 10rem;
+    bottom: 20rem;
     left: 50%;
     transform: translateX(-50%);
   }

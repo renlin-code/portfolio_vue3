@@ -29,6 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 300ms ease-in-out;
 
   svg {
     width: 20rem;
@@ -47,16 +48,16 @@
   }
   @keyframes arrows {
     0% {
-      transform: translateY(-5rem);
+      transform: translateY(-5rem) scale(1);
       opacity: 0;
     }
     25% {
-      transform: translateY(0);
+      transform: translateY(0) scale(1.3);
       opacity: 1;
     }
     50%,
     100% {
-      transform: translateY(5rem);
+      transform: translateY(5rem) scale(1);
       opacity: 0;
     }
   }

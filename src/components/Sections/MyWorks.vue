@@ -128,6 +128,9 @@ import works from "./works.json";
           &:last-child {
             margin-bottom: 0;
           }
+          &::marker {
+            color: $main-color;
+          }
         }
       }
       &-tech {
